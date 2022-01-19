@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css" />
+    <script src="./login.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div>
+      <h1 style="text-align: center; color: white" id="header">LOGIN/SIGN UP PAGE</h1>
+      <img src="https://www.pngkit.com/png/full/146-1467068_small-cloud-png.png" id="cloud2">
+
+    </div>
+
+    <div class="container flex flex-column absolute-center">
+      <div class="flex" id="tabs">
+        <h3 id="logintab" onclick="clickLogin()">login</h3>
+        <h3 id="signuptab" onclick="clickSignup()">sign up</h3>
+        <div id="undertab"></div>
+      </div>
+      <div class="form-section flex">
+        <div class="login flex flex-column">
+          <input type="text" id="login-username" placeholder="Username" />
+          <input type="password" id="login-pswd" placeholder="Password" />
+          <p><a href="#">Forgot your username/password?</a></p>
+          <button class="btn" id="login-btn">Login</button>
+          <!-- <p>Login with</p> -->
+          <span class="social-media">
+            <i class="fab fa-facebook"></i><i class="fab fa-google-plus-g"></i
+            ><i class="fab fa-linkedin"></i>
+          </span>
+        </div>
+
+        <div class="signup flex flex-column">
+          <input type="email" id="signup-email" placeholder="Email" />
+          <input type="text" id="signup-username" placeholder="Username" />
+          <input type="password" id="signup-pswd" placeholder="Password" />
+          <button class="btn" id="signup-btn">sign up</button>
+
+          <span class="social-media">
+            <i class="fab fa-facebook"></i><i class="fab fa-google-plus-g"></i
+            ><i class="fab fa-linkedin"></i>
+          </span>
+        </div>
+        <div class="signup"></div>
+      </div>
+    </div>
+  </body>
+</html>

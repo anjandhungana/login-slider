@@ -1,0 +1,175 @@
+body {
+  font-family: "Lato", sans-serif;
+  background:linear-gradient(45deg,rgb(1, 36, 51),rgb(0, 0, 0));
+  height:100vh;
+}
+
+#header{
+    position:relative;
+}
+
+/* #cloud1{
+    position:absolute;
+    left:40%;
+    animation:move-cloud 50s infinite;
+    animation-timing-function: linear;
+} */
+
+#cloud2{
+    position:absolute;
+    animation:move-cloud 30s infinite;
+    animation-direction:alternate;
+    animation-timing-function:linear;
+    
+}
+
+.absolute-center {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.container {
+  height: 400px;
+  width: 400px;
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px #222;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+#tabs {
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  position: relative;
+}
+
+#undertab {
+  content: "";
+  height: 2px;
+  width: 50%;
+  position: absolute;
+  background: #333;
+  bottom: 0;
+  right: 0;
+}
+
+#tabs * {
+  font-weight: 500;
+}
+
+#tabs h3:hover {
+  cursor: pointer;
+}
+
+.login,
+.signup {
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  top: 25px;
+}
+
+.login {
+  transform: translateX(-90%);
+}
+
+.form-section {
+  position: relative;
+}
+
+/* input {
+  padding: 10px 10px;
+  margin: 10px;
+  border-radius: 20px;
+  border: 1px solid #333;
+} */
+input{
+  padding:10px 10px;
+  margin:10px;
+  border:none;
+  border-bottom:1px solid #333;
+}
+
+input:focus{
+  border-bottom:2px solid black;
+  outline:none;
+}
+
+.login,
+.signup {
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+
+.login p {
+  width: 100%;
+}
+
+.signup {
+  transform: translateX(+);
+}
+
+.social-media i {
+  padding: 0 10px;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.btn {
+  padding: 10px 45px;
+  border-radius: 25px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  border: none;
+  background: #333;
+  color: white;
+}
+
+.btn:hover {
+  background: rgb(31, 31, 31);
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+
+/* animation */
+@keyframes move-cloud {
+    0%{
+        transform: translateX(-100%);
+        opacity:0%;
+    }
+
+    20%{
+      opacity:20%;
+    }
+
+    100%{
+        transform: translateX(120%);
+        opacity: 0;
+    }
+}
+
+@keyframes stretch {
+
+  
+}
+
